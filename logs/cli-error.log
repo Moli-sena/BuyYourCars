@@ -1,0 +1,216 @@
+2020-06-27 09:58:50 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#12 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Users')
+#13 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Users')
+#14 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Users', 0)
+#15 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('users')
+#17 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#18 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 C:\xampp\htdocs\cartrader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2020-06-27 09:59:09 Error: [PDOException] SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('mysql:host=loca...', 'my_app', 'secret', Array)
+#1 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Database\Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'car_lists', 'CarLists')
+#12 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CarLists')
+#13 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('CarLists')
+#14 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('CarLists', 0)
+#15 C:\xampp\htdocs\cartrader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('car_lists')
+#17 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#18 C:\xampp\htdocs\cartrader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 C:\xampp\htdocs\cartrader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
+2020-07-03 07:29:32 Error: [Cake\Database\Exception] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql2ec8_115_6.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'car_lists', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('car_lists', Array)
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('car_lists')
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(416): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(232): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'categories', 'Categories')
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Categories')
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Categories')
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Categories', 0)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('categories')
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql2ec8_115_6.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 38
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(38): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(352): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(301): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(305): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'car_lists', Array, Object(Cake\Database\Schema\TableSchema))
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('car_lists', Array)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('car_lists')
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(416): Cake\ORM\Table->getSchema()
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(232): Bake\Shell\Task\ModelTask->findHasMany(Object(Cake\ORM\Table), Array)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#14 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'categories', 'Categories')
+#15 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Categories')
+#16 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Categories')
+#17 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Categories', 0)
+#18 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#19 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('categories')
+#20 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#21 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2020-07-04 14:45:21 Error: [Cake\Database\Exception] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql3b30_411_1.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'carts', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('carts', Array)
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('carts')
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(325): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(222): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\CartsTable), Array)
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CartsTable))
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CartsTable), 'carts', 'Carts')
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Carts')
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Carts')
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Carts', 0)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('carts')
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql3b30_411_1.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 38
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(38): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(352): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(301): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(305): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'carts', Array, Object(Cake\Database\Schema\TableSchema))
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('carts', Array)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('carts')
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(325): Cake\ORM\Table->getSchema()
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(222): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\CartsTable), Array)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CartsTable))
+#14 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CartsTable), 'carts', 'Carts')
+#15 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Carts')
+#16 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Carts')
+#17 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Carts', 0)
+#18 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#19 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('carts')
+#20 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#21 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
+2020-07-04 14:46:00 Error: [RuntimeException] Failed to write cache file "C:\xampp\htdocs\car_trader\tmp\cache\twigView/66/6674e964c3ddfaedb941de01765d017b13f3743bf6c1cc994abbb593c26a8513.php". in C:\xampp\htdocs\car_trader\vendor\twig\twig\src\Cache\FilesystemCache.php on line 80
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\twig\twig\src\Environment.php(487): Twig\Cache\FilesystemCache->write('C:\\xampp\\htdocs...', '<?php\n\nuse Twig...')
+#1 C:\xampp\htdocs\car_trader\vendor\twig\twig\src\Environment.php(445): Twig\Environment->loadClass('__TwigTemplate_...', 'C:\\xampp\\htdocs...', NULL)
+#2 C:\xampp\htdocs\car_trader\vendor\wyrihaximus\twig-view\src\View\TwigView.php(180): Twig\Environment->loadTemplate('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\View\BakeView.php(146): WyriHaximus\TwigView\View\TwigView->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php(91): Bake\View\BakeView->render('tests/fixture')
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\FixtureTask.php(251): Bake\Shell\Task\BakeTemplateTask->generate('tests/fixture')
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\FixtureTask.php(197): Bake\Shell\Task\FixtureTask->generateFixtureFile('Carts', Array)
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1200): Bake\Shell\Task\FixtureTask->bake('Carts', 'carts')
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(117): Bake\Shell\Task\ModelTask->bakeFixture('Carts', 'carts')
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Carts')
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Carts')
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Carts', 0)
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('carts')
+#14 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#15 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#16 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2020-07-04 14:49:22 Error: [Cake\Database\Exception] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql3b30_41a_6.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 132
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'car_lists', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('car_lists', Array)
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('car_lists')
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(416): Cake\ORM\Table->getSchema()
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(232): Bake\Shell\Task\ModelTask->findHasMany(Object(App\Model\Table\CartsTable), Array)
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CartsTable))
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CartsTable), 'carts', 'Carts')
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Carts')
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Carts')
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Carts', 0)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('carts')
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+Caused by: [PDOException] SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql3b30_41a_6.MAI' is read only in C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 38
+Stack Trace:
+#0 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(38): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(349): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(352): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(301): Cake\Database\Connection->query('SHOW FULL COLUM...')
+#5 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(67): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Connection.php(305): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(130): Cake\Database\Connection->execute('SHOW FULL COLUM...', Array)
+#8 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(98): Cake\Database\Schema\Collection->_reflect('Column', 'car_lists', Array, Object(Cake\Database\Schema\TableSchema))
+#9 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(62): Cake\Database\Schema\Collection->describe('car_lists', Array)
+#10 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\ORM\Table.php(559): Cake\Database\Schema\CachedCollection->describe('car_lists')
+#11 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(416): Cake\ORM\Table->getSchema()
+#12 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(232): Bake\Shell\Task\ModelTask->findHasMany(Object(App\Model\Table\CartsTable), Array)
+#13 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\CartsTable))
+#14 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(App\Model\Table\CartsTable), 'carts', 'Carts')
+#15 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Carts')
+#16 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(282): Bake\Shell\Task\ModelTask->main('Carts')
+#17 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('Carts', 0)
+#18 C:\xampp\htdocs\car_trader\vendor\cakephp\bake\src\Shell\BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#19 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\Shell.php(517): Bake\Shell\BakeShell->all('carts')
+#20 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#21 C:\xampp\htdocs\car_trader\vendor\cakephp\cakephp\src\Console\CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#22 C:\xampp\htdocs\car_trader\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#23 {main}
+
+
